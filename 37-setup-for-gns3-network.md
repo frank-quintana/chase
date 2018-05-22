@@ -36,7 +36,9 @@
 
  0. Those steps gave connectivity to the GNS3 environment running on our local host. That will be critical, if we're eventually going to drive our virtualized appliances with Python or Ansible.
 
- 0. Click on the "Browse all Devices" icon (looks like 4 icons in one button) > Click the dropdown and choose "Installed appliances".
+ 0. Click on the "Browse all Devices" icon (looks like 4 icons in one button).
+    ![](https://alta3.com/static/images/Napalm_Install/Setting_UP_GNS_Networking/Build_a_network_topology/network_top_0.png)     <br>
+ 0. Click the dropdown and choose "Installed appliances".
     ![](https://alta3.com/static/images/Napalm_Install/Setting_UP_GNS_Networking/Build_a_network_topology/network_top_1.png)     <br>
  0. Click and drag the cloud icon the center area.
     ![](https://alta3.com/static/images/Napalm_Install/Setting_UP_GNS_Networking/Build_a_network_topology/network_top_2.png)     <br>
