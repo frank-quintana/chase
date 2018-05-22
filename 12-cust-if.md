@@ -1,0 +1,93 @@
+# Writing your own if-logic script
+
+### Lab Objective
+
+The objective of this lab is to write your own custom script utilizing the if, elif, and else statements, along with any of the other Python coding tricks we've learned thus far. Don't worry, even if this is your first day coding, you will be successful in this lab.
+
+Below you'll find a working Python 3.x code block. You'll use this to stare-and-compare (if you need to) in order to create your own custom Python 3.x code.
+
+### Procedure
+
+0. Clean up your remote desktop (close any previously open windows).
+
+0. Open a new terminal.
+
+0. Change directories to **/home/student/**
+
+    `student@beachhead:/$` `cd`
+
+0. Make a new direcotry to work in
+
+    `student@beachhead:~/mycode/custif$` `mkdir mycode/custif/`
+
+0. Open the leafpad text editor.
+
+    `student@beachhead:~/mycode/custif$` `leafpad &`
+
+0. Copy and paste the following into leafpad.
+
+    ```
+    #!/usr/bin/env python3
+    message = 'The movie is about to begin, we recommend '
+    print('What is your connection speed in Mbps?')
+    connection = float(input())
+    if connection >= 25:
+        message = message + 'setting video to 4k.'
+    elif connection >= 5:
+        message = message + 'setting video to 1080p.'
+    elif connection >= 2:
+        message = message + 'setting video to 720p.'
+    else:
+        message = message + 'finding another access network.'
+    print(message)
+    ```
+    
+0. Click **File > Save As...**
+
+0. Save the file as, `/home/student/mycode/custif/myflix.py`
+
+0. Back in the terminal, change permissions on the script.
+
+    `student@beachhead:~/mycode/custif$` `chmod u+x myflix.py`
+
+0. Run **myflix.py** and confirm that the program works.
+
+    `student@beachhead:~/mycode/custif$` `./myflix.py`
+
+0. Run the program a few times and enter multiple values. Make sure it works as expected, and doesn't result in any run errors.
+
+0. Okay, so now you have the structure for a working Python 3.x program that uses if, elif, and else. Now, write your own program using if, elif, and else! Even if this is your first time coding, you should be able to stare and compare your way to some success. You can pick from one of the following ideas, or come up with your own:
+    - A program that prints menu of possible Mininet topologies, and then prompts the user for input. After input is collected, script the opening of Mininet using the topology selected by the user.
+        - This [StackOverflow post](https://stackoverflow.com/questions/89228/calling-an-external-command-in-python) will help in this task
+    - A program that prints a menu of possible networking commands, and then prompts the user for input. The script then asks for an interface to perform the command on.
+        - Utilize the subprocess module (covered in a previous lab)
+        - Use commands you learned about on Day 1
+    - A program that prompts the user for network speed in Mbps, then grades the network performance (invent your own scale) 
+    - A program that calculates postage rates
+        - http://www.stamps.com/usps/postage-rate-increase/
+    - A program that prompts the user for a value (1 through n), then returns a quick synopsis of a book or movie in that series.
+        - Harry Potter
+        - Hobbit & Lord of the Rings
+        - Chronicles of Narnia
+        - Indiana Jones
+    - A program that prompts a user for a numeric score, then returns the letter grade associated with that score.
+        - A (100 to 90)
+        - B (89 to 80)
+        - C (79 to 70)
+        - D (69 to 60)
+        - F (59 and below)
+    - A program that returns severity of a hurricane based upon wind speeds. Hurricane classifications are measured with the [Saffir-Simpson Huricane Winds Scale](https://en.wikipedia.org/wiki/Saffir%E2%80%93Simpson_scale)
+    - A program that returns the severity of pollen count. Pollen is measured in grains of pollen per cubic meter of air within a 24 hour period, a chart with associated information is [available here](http://www.aaaai.org/global/nab-pollen-counts/reading-the-charts)
+    - Or, write your own totally custom program using if, elif, and else.
+
+0. When you think you have a working program, save your code in `/home/student/custif/` as, **cust_if_script.py**
+
+0. Back in the terminal, change the permissions on your script so it can run.
+
+    `student@beachhead:~/mycode/custif$` `chmod u+x cust_if_script.py`
+
+0. Execute **cust_if_script.py**
+
+    `student@beachhead:~/mycode/custif$` `./cust_if_script.py`
+
+0. If your script fails, no big deal, keep at it until it works. If you hit a brick-wall, ask the instructor for some help.
